@@ -74,7 +74,7 @@ def getSensorsData(car, angle):
         newY = getSensorY(y, angle, sensorAngle, margin)      
         sensorData.append(checkPixel(newX, newY))
         # Remove drawing of sensors
-        pygame.draw.rect(screen,(0, 255,0), [newX, newY, 5, 5])
+        #pygame.draw.rect(screen,(0, 255,0), [newX, newY, 5, 5])
         
     return sensorData
     
@@ -122,7 +122,7 @@ while True:
           
           newimage=pygame.transform.rotate(player_image,angle) 
           # Remove displaying the player rectangle
-          pygame.draw.rect(screen,(0, 255, 0), player)
+          #pygame.draw.rect(screen,(0, 255, 0), player)
           screen.blit(newimage ,player)
             
           forward = True
